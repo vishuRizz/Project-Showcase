@@ -27,7 +27,6 @@ const salesData = [
 const CMSDashboard = () => {
   return (
     <div className="flex h-screen bg-gray-100">
-      {/* Sidebar */}
       <div className="w-64 bg-white shadow-lg">
         <div className="flex items-center p-4">
           <div className="w-8 h-8 mr-2 bg-indigo-600 rounded-md"></div>
@@ -51,9 +50,7 @@ const CMSDashboard = () => {
         </nav>
       </div>
 
-      {/* Main content */}
       <div className="flex flex-col flex-1 overflow-hidden">
-        {/* Top bar */}
         <header className="flex items-center justify-between p-4 bg-white shadow">
           <div className="flex-1 max-w-xl">
             <div className="relative">
@@ -68,7 +65,6 @@ const CMSDashboard = () => {
           </div>
         </header>
 
-        {/* Dashboard content */}
         <main className="flex-1 p-6 overflow-x-hidden overflow-y-auto bg-gray-100">
           <div className="flex items-center justify-between mb-6">
             <h1 className="text-2xl font-semibold text-gray-800">Dashboard</h1>
