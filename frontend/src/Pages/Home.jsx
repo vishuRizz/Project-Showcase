@@ -1,9 +1,25 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { gsap } from 'gsap';
 import Navbar from '../components/Navbar';
 import PageTwo from '../components/PageTwo';
+import axios from 'axios';
 
 const Home = () => {
+  const [ticket, setTicket] = useState([])
+  useEffect(()=>{
+    const fetchTicket = async () =>{
+      try {
+        const res = await axios.get("https://19b9-103-47-74-66.ngrok-free.app/api/tickets/alltickets")
+        setTicket(res.data)
+        console.log(res.data)
+        
+      } catch (error) {
+        console.error("errore")
+        console.log("errro kmc ", error)
+      }
+    }
+    fetchTicket()
+  }, [])
   useEffect(() => {
     const tl = gsap.timeline();
   

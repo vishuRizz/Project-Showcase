@@ -18,7 +18,7 @@ const PageTwo = () => {
         ease: 'power3.out',
         scrollTrigger: {
           trigger: '.heading',
-          start: 'top 80%', 
+          start: 'top 90%', // Adjusted to trigger earlier
         },
       }
     );
@@ -33,7 +33,7 @@ const PageTwo = () => {
         ease: 'power3.out',
         scrollTrigger: {
           trigger: '.paragraph',
-          start: 'top 80%',
+          start: 'top 90%', // Adjusted to trigger earlier
         },
       }
     );
@@ -49,7 +49,7 @@ const PageTwo = () => {
         stagger: 0.3,
         scrollTrigger: {
           trigger: '.card',
-          start: 'top 90%',
+          start: 'top 95%', // Adjusted to trigger earlier
         },
       }
     );
@@ -64,14 +64,14 @@ const PageTwo = () => {
         ease: 'power3.out',
         scrollTrigger: {
           trigger: '.last-section',
-          start: 'top 80%',
+          start: 'top 90%', // Adjusted to trigger earlier
         },
       }
     );
   }, []);
 
   return (
-    <div className="p-4 text-black md:p-8 bg-slate-100">
+    <div className="h-screen p-4 text-black md:p-8 bg-slate-100">
       <h2 className="mb-6 text-3xl font-bold text-center md:text-4xl heading">
         Helping you work smarter
       </h2>
@@ -79,7 +79,8 @@ const PageTwo = () => {
         Our simple CRM software provides everything you need to run <br />
         your sales and marketing, in one easy-to-use yet powerful system.
       </p>
-      <div className="flex flex-col justify-center gap-8 md:flex-row">
+
+      <div className="flex flex-col justify-center gap-8 mt-20 md:flex-row">
         <div className="w-full p-4 text-center bg-white rounded-lg shadow-md md:w-1/3 card">
           <div className="flex justify-center mb-4 text-4xl">
             <FcSalesPerformance/>
@@ -120,7 +121,8 @@ const PageTwo = () => {
           </a>
         </div>
       </div>
-      <div className="flex items-center justify-center mt-12 md:mt-20 last-section">
+
+      <div className="flex items-center justify-center mt-20 md:mt-20 last-section">
         <div>
           <div className="text-2xl font-bold md:text-4xl">
             <h1 className="text-center">
