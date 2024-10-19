@@ -1,6 +1,8 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 function Navbar() {
+  const navigate = useNavigate();
   return (
     <div>
       <nav className='flex justify-between p-3'>
@@ -17,9 +19,17 @@ function Navbar() {
             </div>
       </div>
       <div className='flex items-center gap-x-6'>
-        <p> login </p>
-        <div> <button className='p-2 border rounded-xl border-slate-500 hover:bg-white hover:text-black max-md:hidden'>
-            Free Trial
+        <button
+        onClick={()=>{
+          navigate("/signin")
+        }}
+        > login </button>
+        <div> <button
+        onClick={()=>{
+          navigate("/orglogin")
+        }}
+        className='p-2 border rounded-xl border-slate-500 hover:bg-white hover:text-black max-md:hidden'>
+           Org Login
             </button> </div>
       </div>
       </nav>

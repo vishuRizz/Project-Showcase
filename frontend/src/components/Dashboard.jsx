@@ -2,6 +2,7 @@ import React from "react";
 import AddRequestCard from "./AddRequestCard";
 import Customers from "./Members";
 import Tasks from "./Tasks";
+import Tickets from "./Tickets";
 
 const Dashboard = () => {
   return (
@@ -11,6 +12,7 @@ const Dashboard = () => {
         <Customers />
       </div>
       <Tasks />
+      <Tickets/>
     </div>
   );
 };

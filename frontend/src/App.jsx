@@ -4,6 +4,8 @@ import SignupPage from "./Pages/SignupPage"
 import SigninPage from "./Pages/SigninPage"
 import DashboardMain from "./Pages/DashboardMain"
 import ParentDashboard from "./Pages/ParentDashboard"
+import OrgLogin from "./Pages/OrgLogin"
+import Ticket from "./Pages/Ticket"
 function App() {
   return (
     <>
@@ -14,6 +16,8 @@ function App() {
       <Route path="/signin" element={<SigninPage/>} />
       <Route path="/dashboard" element={<DashboardMain/>}/>
       <Route path="/dashboard-parent" element={<ParentDashboard/>}/>
+      <Route path="/orglogin" element={<OrgLogin/>}/>
+      <Route path="/ticket/:id" element={<Ticket/>}/>
     </Routes>
     </BrowserRouter>
     </>
