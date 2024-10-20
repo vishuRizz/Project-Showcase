@@ -6,6 +6,7 @@ import DashboardMain from "./Pages/DashboardMain"
 import ParentDashboard from "./Pages/ParentDashboard"
 import OrgLogin from "./Pages/OrgLogin"
 import Ticket from "./Pages/Ticket"
+import CMSDashboard from "./components/CMSDashboard"
 function App() {
   return (
     <>
@@ -18,6 +19,7 @@ function App() {
       <Route path="/dashboard-parent" element={<ParentDashboard/>}/>
       <Route path="/orglogin" element={<OrgLogin/>}/>
       <Route path="/ticket/:id" element={<Ticket/>}/>
+      <Route path="/cms-dashboard" element={<CMSDashboard/>}/>
     </Routes>
     </BrowserRouter>
     </>

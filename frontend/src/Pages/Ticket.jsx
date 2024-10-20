@@ -36,7 +36,7 @@ const Ticket = () => {
       alert("Ticket denied!"); 
       
     } catch (error) {
-      console.error("Error denying ticket:", error);
+       console.error("Error denying ticket:", error);
       alert("Error denying ticket.");
     }
   };

@@ -60,7 +60,7 @@ const CMSDashboard = () => {
           </div>
           <div className="flex items-center">
             <Bell className="mr-4 text-gray-600" size={20} />
-            <img src="/api/placeholder/32/32" alt="User" className="w-8 h-8 mr-2 rounded-full" />
+            {/* <img src="/api/placeholder/32/32" alt="User" className="w-8 h-8 mr-2 rounded-full" /> */}
             <span className="font-semibold text-gray-700">Stanley Green</span>
           </div>
         </header>

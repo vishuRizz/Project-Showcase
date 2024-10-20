@@ -18,7 +18,7 @@ console.log(title, content, review)
         console.error('Error:', error.response ? error.response.data : error.message);
       }
     }
-  
+
   const submitButton=()=>{
     postreq()
   }

@@ -54,9 +54,7 @@ const Home = () => {
           </div>
           <div className="mt-20 paragraph">
             <p className="max-w-2xl mx-auto mb-12 text-xl para text-slate-300 max-md:text-lg">
-              Build long-lasting relationships, save time and make more sales with the <br /> 
-              simple CRM software that's designed for growing teams working B2B. <br /> 
-              Try us for free.
+            the feeling that everyone else has a life as full and complex as your own. It can also be described as the realization that everyone is living their own epic story, even strangers you pass on the street
             </p>
           </div>
           <div className="p-4 buttons">
